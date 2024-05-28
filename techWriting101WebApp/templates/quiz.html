@@ -1,0 +1,108 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Quiz
+{% endblock %}
+
+{% block main %}
+<script>
+    // Wait for the DOM to fully load before running the script
+    document.addEventListener('DOMContentLoaded', function() {
+        // Select all elements with the class 'incorrect'
+        let incorrects = document.querySelectorAll('.incorrect');
+        // Add click event listener to each 'incorrect' button
+        for (let i = 0; i < incorrects.length; i++) {
+            incorrects[i].addEventListener('click', function() {
+                // Change the background color to red when clicked
+                incorrects[i].style.backgroundColor = 'red';
+            });
+        }
+
+        // Select all elements with the class 'correct'
+        let corrects = document.querySelectorAll('.correct');
+        // Add click event listener to each 'correct' button
+        for (let i = 0; i < corrects.length; i++) {
+            corrects[i].addEventListener('click', function() {
+                // Change the background color to green when clicked
+                corrects[i].style.backgroundColor = 'green';
+            });
+        }
+
+        // Add click event listener to the element with id 'check'
+        document.querySelector('#check').addEventListener('click', function() {
+            // Select the first input element
+            let input = document.querySelector('input');
+            // Check if the input value is 'glossary'
+            if (input.value === 'glossary') {
+                // Change the background color to green if correct
+                input.style.backgroundColor = 'green';
+            } else {
+                // Change the background color to red if incorrect
+                input.style.backgroundColor = 'red';
+            }
+        });
+    });
+</script>
+
+<body>
+    <div class="header">
+        <h1>Test Your Knowledge!</h1>
+    </div>
+    <div class="container">
+        <div class="section">
+            <h2>Part 1: Multiple Choice</h2>
+            <hr>
+            <ol>
+                <li>Why is the active voice preferred over the passive voice in technical writing?</li>
+                <button class="incorrect">A. It makes the subject explicit.</button>
+                <button class="incorrect">B. It makes the sentence clearer and shorter.</button>
+                <button class="correct">C. Both a and b.</button>
+                <button class="incorrect">D. None.</button><br>
+
+                <br><li>When is the passive voice recommended?</li>
+                <button class="incorrect">A. When you want your text to sound professional.</button>
+                <button class="correct">B. When the subject is unknown or irrelevant.</button>
+                <button class="incorrect">C. When you need to write a long document.</button>
+                <button class="incorrect">D. Never.</button><br>
+
+                <br><li>Which sentence is correct?</li>
+                <button class="incorrect">A. If you boil water, it will vaporize.</button>
+                <button class="correct">B. If you boil water, it vaporizes.</button>
+                <button class="incorrect">C. If you boil water, it is going to vaporize.</button>
+                <button class="incorrect">D. If you will boil water, it will vaporize.</button><br>
+
+                <br><li>Choose the correct option to fill in the sentence: If you ____ OK, the page closes.</li>
+                <button class="correct">A. click</button>
+                <button class="incorrect">B. will click</button>
+                <button class="incorrect">C. would click</button>
+                <button class="incorrect">D. are going to click</button><br>
+            </ol>
+        </div>
+        <br>
+        <div class="section">
+            <h2>Part 2: Written Response</h2>
+            <hr>
+            <h3 class="left">What alphabetized index of word definitions should be used to define all jargon in any technical writing document?</h3><br>
+            <br>
+            <!-- Text input for written response -->
+            <input type="text">
+            <!-- Button to check the written response -->
+            <button id="check">Check Answer</button>
+        </div>
+        <br>
+        <div class="section">
+            <h2>Part 3: Rewriting Challenge</h2>
+            <hr>
+            <p>Rephrase the following sentences to make them simpler and shorter without modifying their meaning.</p>
+            <ol>
+                <li>All of the employees will be required to submit a full accounting of the total aggregate time spent on all revisions of all company policies that have been updated so far.</li>
+                <br>
+                <li>Members of our health insurance can deduct up to but not more than $850 as a medical expense regarding costs of a chiropractic treatment at a chiropractic facility approved by us.</li>
+            </ol>
+        </div>
+    </div>
+    <footer>
+        <br>For additional challenges, <a href="https://www.plainlanguage.gov/media/training/exercises_all_writing_classes.pdf">click here</a>
+    </footer>
+</body>
+{% endblock %}

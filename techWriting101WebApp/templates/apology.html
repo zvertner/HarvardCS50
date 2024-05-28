@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Apology
+{% endblock %}
+
+{% block main %}
+    <!-- Error Message Container -->
+    <div class="container text-center">
+        <!-- Error Heading -->
+        <h1>{{ top | urlencode }}/{{ bottom | urlencode }} Error</h1>
+        <!-- Error Description (optional) -->
+        <p>Sorry, something went wrong. Please try again or contact support if the issue persists.</p>
+    </div>
+{% endblock %}

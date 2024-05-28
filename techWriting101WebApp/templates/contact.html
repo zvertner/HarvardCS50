@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+<!-- The extends tag is used to specify that this template extends "layout.html". 
+     This means that this template will inherit the structure and content of "layout.html".-->
+
+{% block title %}
+    Contact
+{% endblock %}
+
+{% block main %}
+    <!-- Contact information -->
+    <address>
+        <!-- Name -->
+        <strong>NAME:</strong> The Tech Writer<br>
+        <!-- Phone number -->
+        <strong>PHONE NUMBER:</strong> (480) 555-5555<br>
+        <!-- Physical address -->
+        <strong>ADDRESS:</strong> 555 High Tech Writing Blvd., San Diego, CA 90210<br>
+        <!-- Email address with mailto link for easy email access -->
+        <strong>EMAIL:</strong> <a href="mailto:example@gmail.com">example@gmail.com</a><br>
+        <!-- Fax number -->
+        <strong>FAX:</strong> (555) 555-5555
+    </address>
+{% endblock %}

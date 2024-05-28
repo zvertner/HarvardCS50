@@ -1,0 +1,190 @@
+/* Body styling for overall page layout */
+body {
+    background-color: rgb(210, 240, 249); /* Light blue background color */
+    color: #212529; /* Dark grey text color */
+    font-size: 1rem; /* Base font size */
+    font-weight: 400; /* Normal font weight */
+    line-height: 1.5; /* Line height for readability */
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center text alignment */
+}
+
+/* Center align form controls and auto margin */
+.form-control {
+    text-align: center;
+    margin: auto;
+}
+
+/* Styling for the navbar */
+#navbar {
+    font-size: 11px; /* Small font size for navbar */
+}
+
+/* Styling for the login section */
+#login {
+    margin: auto; /* Center login section */
+    text-align: center; /* Center text */
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; /* Smooth transition for styles */
+}
+
+/* Center align header content */
+header {
+    text-align: center;
+}
+
+/* Right align form elements */
+form {
+    text-align: right;
+}
+
+/* Center align input elements */
+input {
+    text-align: center;
+}
+
+/* Styling for unordered lists */
+ul {
+    font-size: 22px; /* Large font size */
+    float: left; /* Float list items to the left */
+    text-align: left; /* Left align text */
+}
+
+/* Styling for ordered lists */
+ol {
+    font-family: serif; /* Serif font family */
+    font-size: medium; /* Medium font size */
+}
+
+/* Remove underline from links */
+a {
+    text-decoration: none;
+}
+
+/* Styling for navigation menu */
+.nav .main-menu {
+    margin: 1.7rem 0; /* Margin around the main menu */
+}
+
+.nav {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping of flex items */
+    padding-left: 0; /* Remove left padding */
+    margin-bottom: 0; /* Remove bottom margin */
+    list-style: none; /* Remove default list styling */
+}
+
+/* Remove left padding for navigation lists */
+nav ul {
+    list-style-type: none; /* Remove list bullets */
+    padding-left: 0; /* Remove left padding */
+}
+
+/* Styling for different heading levels */
+h1 {
+    font-family: sans-serif; /* Sans-serif font family */
+    font-size: 66px; /* Large font size */
+}
+
+h2 {
+    font-family: sans-serif; /* Sans-serif font family */
+    font-size: 44px; /* Smaller font size than h1 */
+}
+
+h3 {
+    font-family: serif; /* Serif font family */
+    font-size: medium; /* Medium font size */
+}
+
+h4 {
+    font-family: serif; /* Serif font family */
+    font-size: 30px; /* Smaller font size than h3 */
+    float: left; /* Float heading to the left */
+}
+
+h5 {
+    font-family: serif; /* Serif font family */
+    font-size: 20px; /* Smaller font size than h4 */
+    float: left; /* Float heading to the left */
+}
+
+h6 {
+    font-family: serif; /* Serif font family */
+    font-size: 42px; /* Larger font size */
+    float: left; /* Float heading to the left */
+}
+
+/* Adjust opacity for div with class 'b' */
+div.b {
+    opacity: 0.7; /* 70% opacity */
+}
+
+/* Styling for div with class 'solutions' */
+div.solutions {
+    text-align: left; /* Left align text */
+    text-shadow: 2px 2px #0073e6; /* Blue text shadow */
+}
+
+/* Center align div with class 'register' */
+div.register {
+    margin: auto; /* Center the div */
+    text-align: center; /* Center align text */
+}
+
+/* Float elements with class 'left' to the left */
+.left {
+    float: left;
+}
+
+/* Float elements with class 'right' to the right */
+.right {
+    float: right;
+}
+
+/* Styling for container elements */
+.container {
+    font-size: small; /* Small font size */
+    float: left; /* Float container to the left */
+    text-align: left; /* Left align text */
+    padding-left: 15px; /* Padding on the left */
+    padding-right: 15px; /* Padding on the right */
+}
+
+/* Styling for images */
+img {
+    padding-left: 15px; /* Padding on the left */
+    padding-right: 35px; /* Padding on the right */
+    padding-bottom: 35px; /* Padding on the bottom */
+    padding-top: 15px; /* Padding on the top */
+}
+
+/* Styling for section elements */
+.section {
+    padding: 0.5rem 2rem 1rem 2rem; /* Padding for sections */
+}
+
+/* Styling for elements with class 'head' */
+.head {
+    font-size: 30px; /* Large font size */
+    color: rgb(96, 120, 130); /* Greyish color */
+    font-family: cursive; /* Cursive font family */
+}
+
+/* Styling for header elements */
+.header {
+    background-color: #477bff; /* Blue background */
+    color: #fff; /* White text color */
+    margin-bottom: 2rem; /* Margin at the bottom */
+    padding: 2rem 1rem; /* Padding inside the header */
+    text-align: center; /* Center align text */
+}
+
+/* Styling for elements with class 'references' */
+.references {
+    border-block-start-style: dotted; /* Dotted top border */
+}
+
+/* Styling for text inputs */
+input[type="text"] {
+    line-height: 1.8; /* Line height for readability */
+    width: 50%; /* 50% width */
+}
